@@ -1,5 +1,7 @@
 <template>
   <div>
-    Meory
+    <HorizontalEngine />
   </div>
 </template>
+<script lang="ts">
+</script>
