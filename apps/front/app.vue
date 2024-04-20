@@ -1,5 +1,7 @@
 <template>
   <div>
+    <Logo />
+    <CustomInput/>
     <HorizontalEngine />
   </div>
 </template>
