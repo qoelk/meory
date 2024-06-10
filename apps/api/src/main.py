@@ -2,15 +2,23 @@ import random
 import uuid
 
 from fastapi import FastAPI
+from starlette.middleware.cors import CORSMiddleware
 
 from apps.api.models.posts import Post
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/posts")
 def get_posts() -> list[Post]:
-    limit = 10
+    limit = 40
     posts = []
     for i in range(limit):
         post = get_post(i)

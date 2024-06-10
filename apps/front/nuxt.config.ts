@@ -4,7 +4,7 @@ export default defineNuxtConfig({
         families: {
             'Open+Sans': [400, 600, 700],
         }
-    }]],
+    }], ],
     devtools: {enabled: true},
     css: [
         '@/assets/scss/main.scss'
