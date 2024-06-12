@@ -9,5 +9,8 @@
 </template>
 
 <style scoped lang="scss">
-
+.block {
+  border-radius: 40px;
+  overflow: hidden;
+}
 </style>
