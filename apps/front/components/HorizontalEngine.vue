@@ -1,7 +1,7 @@
 <template>
   <div class="horizontal-engine">
-    <div class="horizontal-engine__row" v-for="row in layout">
-      <div class="horizontal-engine__item" v-for="item in row">
+    <div v-for="row in layout" class="horizontal-engine__row">
+      <div v-for="item in row" class="horizontal-engine__item">
         <post-block :post="item"/>
       </div>
     </div>
