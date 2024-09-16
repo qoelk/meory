@@ -9,7 +9,7 @@
         <logo/>
       </div>
       <div class="header__item item__wide">
-        //
+       <search-bar/>
       </div>
       <div class="header__item item__wide">
         <login/>
